@@ -52,16 +52,6 @@ def play_game(difficulty):
             return
         if difficulty == "лёгкий":
             comp_move = computer_move_light_intelligence(remaining_stones)
-        elif difficulty == "средний":
-            comp_move = computer_move_medium_intelligence(remaining_stones)
-        elif difficulty == "сложный":
-            comp_move = computer_move_high_intelligence(remaining_stones)
-        remaining_stones -= comp_move
-        if remaining_stones < 0:
-            remaining_stones = 0
-        print(f"Компьютер взял {comp_move} камня(ей) ==> осталось {remaining_stones} камней.")
-        if remaining_stones == 0:
-            print("Компьютер выиграл! Попробуйте ещё раз сыграть.")
 
 
 while True:
